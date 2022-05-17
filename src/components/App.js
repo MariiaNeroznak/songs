@@ -1,15 +1,16 @@
 import React from 'react';
-import SongList from './components/SongList';
-import SongDetail from './components/SongDetail';
+// import { selectSong } from '../actions';
+import SongList from './SongList';
+import SongDetail from './SongDetail';
 
 function App() {
   return (
     <div className='ui container segment'>
       <div className='ui two column very relaxed grid'>
-        <SongList songsList={[]} />
+        <SongList />
         <SongDetail />
       </div>
-      <div class='ui vertical divider'>
+      <div className='ui vertical divider'>
         <i className='arrow right circle large icon'></i>
       </div>
     </div>
