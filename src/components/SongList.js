@@ -10,7 +10,7 @@ class SongList extends Component {
           <div className='ui right floated'>
             <button
               className='ui right labeled icon basic button primary'
-              onClick={() => this.props.selectSong}
+              onClick={() => this.props.selectSong(song)}
             >
               Select
               <i className='right arrow icon'></i>
@@ -26,16 +26,11 @@ class SongList extends Component {
   }
 
   render() {
-    return (
-      <div className='ui column relaxed divided list small'>
-        {this.renderList()}
-      </div>
-    );
+    return this.renderList();
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     songs: state.songs,
   };
