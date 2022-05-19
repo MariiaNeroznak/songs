@@ -17,7 +17,6 @@ class SongList extends Component {
             </button>
           </div>
           <div className='bottom aligned content'>
-            {/* <i className='large music middle aligned icon'></i> */}
             <p className='header'>{song.title}</p>
           </div>
         </div>
